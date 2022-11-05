@@ -174,10 +174,11 @@ $content = $website->data->attributes;
                       <?php
                         $rate = $reference->stars;
                         $count = 0;
-                        while ($count <= $rate){
+                        while ($count < $rate){
                         echo"<i class=\"fa fa-star\"></i>\n";
                         $count++;
                         } ?>
+                        <i class="fa fa-star-o"></i>
                     </div>
                     <img src="<?php echo $reference->picture; ?>">
                     <h3><?php echo $reference->name; ?></h3>
