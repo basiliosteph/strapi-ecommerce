@@ -104,7 +104,7 @@ $content = $website->data->attributes;
         <div class="row">
           <?php foreach($content->featuredProducts as $product) { ?>
             <div class="col-4">
-                <a href="product_details.html"><img src="<?php echo $product->image ?>"></a>
+                <a href="product_details.html"><img src="<?php echo $product->image; ?>"></a>
                 <h4><?php echo $product->name ?></h4>
                 <div class="rating">
                   <?php
@@ -116,7 +116,7 @@ $content = $website->data->attributes;
                     } ?>
                     <i class="fa fa-star-o"></i>
                 </div>
-                <p><?php echo $product->price ?></p>
+                <p><?php echo $product->price; ?></p>
             </div>
             <?php } ?>
 
@@ -126,8 +126,8 @@ $content = $website->data->attributes;
         <div class="row">
           <?php foreach($content->latestProducts as $product) { ?>
             <div class="col-4">
-                <img src="<?php echo $product->image ?>">
-                <h4><?php echo $product->name ?></h4>
+                <img src="<?php echo $product->image; ?>">
+                <h4><?php echo $product->name; ?></h4>
                 <div class="rating">
                   <?php
                     $rate = $product->stars;
@@ -138,7 +138,7 @@ $content = $website->data->attributes;
                     } ?>
                     <i class="fa fa-star-o"></i>
                 </div>
-                <p><?php echo $product->price ?></p>
+                <p><?php echo $product->price; ?></p>
             </div>
             <?php } ?>
         </div>
@@ -169,7 +169,7 @@ $content = $website->data->attributes;
                 <?php foreach($content->testimonials as $reference) { ?>
                 <div class="col-3">
                     <i class="fa fa-quote-left"></i>
-                    <p><?php echo $reference->testimonial ?></p>
+                    <p><?php echo $reference->testimonial; ?></p>
                     <div class="rating">
                       <?php
                         $rate = $reference->stars;
@@ -179,8 +179,8 @@ $content = $website->data->attributes;
                         $count++;
                         } ?>
                     </div>
-                    <img src="<?php echo $reference->picture ?>">
-                    <h3><?php echo $reference->name ?></h3>
+                    <img src="<?php echo $reference->picture; ?>">
+                    <h3><?php echo $reference->name; ?></h3>
                 </div>
                 <?php } ?>
             </div>
@@ -224,8 +224,8 @@ $content = $website->data->attributes;
                     </div>
                 </div>
                 <div class="footer-col-2">
-                    <img src="<?php echo $content->footerLogo ?>" />
-                    <p><?php echo $content->footerSlogan ?></p>
+                    <img src="<?php echo $content->footerLogo; ?>" />
+                    <p><?php echo $content->footerSlogan; ?></p>
                 </div>
                 <div class="footer-col-3">
                     <h3>Useful Links</h3>
