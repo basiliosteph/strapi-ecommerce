@@ -105,7 +105,7 @@ $content = $website->data->attributes;
           <?php foreach($content->featuredProducts as $product) { ?>
             <div class="col-4">
                 <a href="product_details.html"><img src="<?php echo $product->image; ?>"></a>
-                <h4><?php echo $product->name ?></h4>
+                <h4><?php echo $product->name; ?></h4>
                 <div class="rating">
                   <?php
                     $rate = $product->stars;
