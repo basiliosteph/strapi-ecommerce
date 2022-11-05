@@ -174,7 +174,7 @@ $content = $website->data->attributes;
                       <?php
                         $rate = $reference->stars;
                         $count = 0;
-                        while ($count < $rate){
+                        while ($count <= $rate){
                         echo"<i class=\"fa fa-star\"></i>\n";
                         $count++;
                         } ?>
